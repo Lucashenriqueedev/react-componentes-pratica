@@ -1,8 +1,4 @@
-import Titulo from "./components/Titulo"
-import Aluno from "./components/Aluno"
-import Nota from "./components/Nota"
-import Produto from "./components/Produto"
-import "./App.css"
+
 
 function App() {
   return (
@@ -11,26 +7,13 @@ function App() {
 
       <section>
         <h2>Alunos</h2>
-
-        <Aluno
-          nome="Carlos"
-          turma="Desenvolvimento de Sistemas"
-        />
-
-        <Aluno
-          nome="Ana"
-          turma="Desenvolvimento de Sistemas"
-        />
-
-        <Aluno
-          nome="Pedro"
-          turma="Desenvolvimento de Sistemas"
-        />
+        <Aluno nome="Carlos" turma="Desenvolvimento de Sistemas" />
+        <Aluno nome="Ana" turma="Desenvolvimento de Sistemas" />
+        <Aluno nome="Pedro" turma="Desenvolvimento de Sistemas" />
       </section>
 
       <section>
         <h2>Notas</h2>
-
         <Nota disciplina="React" nota={8.5} />
         <Nota disciplina="JavaScript" nota={9} />
         <Nota disciplina="HTML e CSS" nota={7.5} />
@@ -68,7 +51,7 @@ function App() {
         />
       </section>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
