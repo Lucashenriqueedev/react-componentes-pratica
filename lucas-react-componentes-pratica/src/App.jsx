@@ -1,24 +1,44 @@
+import Titulo from "./components/Titulo"
+import Aluno from "./components/Aluno"
+import Nota from "./components/Nota"
+import Produto from "./components/Produto"
+import "./App.css"
 
 function App() {
   return (
-    <div className="container">
+    <main>
       <Titulo />
 
-      <h2>Alunos</h2>
+      <section>
+        <h2>Alunos</h2>
 
-      <Aluno nome="Carlos" turma="DS" />
-      <Aluno nome="Ana" turma="DS" />
-      <Aluno nome="Pedro" turma="DS" />
+        <Aluno
+          nome="Carlos"
+          turma="Desenvolvimento de Sistemas"
+        />
 
-      <h2>Notas</h2>
+        <Aluno
+          nome="Ana"
+          turma="Desenvolvimento de Sistemas"
+        />
 
-      <Nota disciplina="React" nota={8.5} />
-      <Nota disciplina="JavaScript" nota={9} />
-      <Nota disciplina="HTML e CSS" nota={10} />
+        <Aluno
+          nome="Pedro"
+          turma="Desenvolvimento de Sistemas"
+        />
+      </section>
 
-      <h2>Produtos</h2>
+      <section>
+        <h2>Notas</h2>
 
-      <div className="produtos">
+        <Nota disciplina="React" nota={8.5} />
+        <Nota disciplina="JavaScript" nota={9} />
+        <Nota disciplina="HTML e CSS" nota={7.5} />
+      </section>
+
+      <section>
+        <h2>Produtos</h2>
+
         <Produto
           nome="Teclado Mecânico"
           descricao="Teclado com iluminação RGB"
@@ -34,21 +54,21 @@ function App() {
         />
 
         <Produto
-          nome="Monitor"
-          descricao="Monitor Full HD"
-          preco={800}
+          nome="Headset"
+          descricao="Headset para jogos"
+          preco={180}
           disponivel={false}
         />
 
         <Produto
-          nome="Headset"
-          descricao="Headset para jogos"
-          preco={180}
+          nome="Monitor"
+          descricao="Monitor Full HD"
+          preco={850}
           disponivel={true}
         />
-      </div>
-    </div>
-  );
+      </section>
+    </main>
+  )
 }
 
-export default App;
+export default App

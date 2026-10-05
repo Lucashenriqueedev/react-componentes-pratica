@@ -1,12 +1,10 @@
 function Produto({ nome, descricao, preco, disponivel }) {
   return (
-    <div className="card">
+    <div className="produto">
       <h2>{nome}</h2>
       <p>{descricao}</p>
-      <p>R$ {preco}</p>
-
+      <p>Preço: R$ {preco}</p>
       <p>{disponivel ? "Disponível" : "Indisponível"}</p>
-
       <button>Comprar</button>
     </div>
   )
